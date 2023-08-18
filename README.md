@@ -24,3 +24,9 @@ One major reason for this is that Temperature is one of the variables that goes 
 The Sara2StructureList is thus a list of each Sara2SecondaryStructure in the ensemble in order found. When populated the oject is able to give you inromation on min and max energy levels, mfe structure, num of structures in list, as well as teh list of strucures. Each 1 kcal energy group has a Sara2StructureList generated for it which is used to make a unique SingleEnsembleGroup. The SingleEnsembleGroup is an object that is used to hold increasing amounts of information about chuncks of the ensemble and includes information used for switch analyis. Each SingleEnsembleGroup is then feed into a single MultipleEnsembleGroups which is an object that holds all the ensemble groups information broken down by kcal range for those structures.
 
 A Sara2StructureList object is then feed into the Ensemble Variation Algotithm to determine general stability of a RNA sequence across the the descret range of teh ensemble. The value generated is a unit of measurment and Ensemble Variation or EV is the unit. A MultipleEnsembleGroups object is fed into the Local Minima Variation algorithm to get results for that various flavors of LMV that represent different aspect of the stabilty of the ensemble using the ensemble variation metric and unit of measure. To see examples of this implementation check out the unit tests for the nupack interface as it has teh entire process coded up.
+
+#### How to call
+After installation you can access Serena from python via:
+    from serena.ensemble_variation import RunEnsembleVariation
+or
+    from serena.local_minima_variation import  LocalMinimaVariation
