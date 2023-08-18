@@ -5,6 +5,11 @@ This is the webiste for information on the Serena Suite of RNA analysis tools an
 ## System Requirments
 This software was developed to run on Ubuntu 22.04 LTS and Python 3.9. Python 3.9 is used due to the fact that the NUPACK version I currenlty use 4.0.0.28 will not build with any python versions after 3.9. 
 
+## Installation 
+The package is pip installable so currently from the root of the project pass:
+
+    pip install .
+
 ## Algorithms, Tools, and Framework
 
 Currently Ensemble Variation and Local Minima Variation are the only algorithms with tools fully coded up and unit tested from the list of algorithms presented at the annual RNA design conference Eternacon9 at Stanford University. These utilize a new software framework I developed that enabled the processing and shuttling around of information on RNA stuctural ensembles. These ensembles are determined through thermodynamic modeling using University research software tools such as Nupack4 and Vienna2. 
@@ -19,4 +24,3 @@ One major reason for this is that Temperature is one of the variables that goes 
 The Sara2StructureList is thus a list of each Sara2SecondaryStructure in the ensemble in order found. When populated the oject is able to give you inromation on min and max energy levels, mfe structure, num of structures in list, as well as teh list of strucures. Each 1 kcal energy group has a Sara2StructureList generated for it which is used to make a unique SingleEnsembleGroup. The SingleEnsembleGroup is an object that is used to hold increasing amounts of information about chuncks of the ensemble and includes information used for switch analyis. Each SingleEnsembleGroup is then feed into a single MultipleEnsembleGroups which is an object that holds all the ensemble groups information broken down by kcal range for those structures.
 
 A Sara2StructureList object is then feed into the Ensemble Variation Algotithm to determine general stability of a RNA sequence across the the descret range of teh ensemble. The value generated is a unit of measurment and Ensemble Variation or EV is the unit. A MultipleEnsembleGroups object is fed into the Local Minima Variation algorithm to get results for that various flavors of LMV that represent different aspect of the stabilty of the ensemble using the ensemble variation metric and unit of measure.
-  
