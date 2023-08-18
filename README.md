@@ -27,6 +27,10 @@ A Sara2StructureList object is then feed into the Ensemble Variation Algotithm t
 
 #### How to call
 After installation you can access Serena from python via:
+
     from serena.ensemble_variation import RunEnsembleVariation
+
 or
+
     from serena.local_minima_variation import  LocalMinimaVariation
+
