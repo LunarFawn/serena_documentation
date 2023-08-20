@@ -13,7 +13,7 @@ The package is pip installable so currently from the root of the project pass:
 Currently Ensemble Variation and Local Minima Variation are the only algorithms with tools fully coded up and unit tested from the list of algorithms presented at the annual RNA design conference Eternacon9 at Stanford University. These utilize a new software framework I developed that enabled the processing and shuttling around of information on RNA stuctural ensembles. These ensembles are determined through thermodynamic modeling using University research software tools such as Nupack4 and Vienna2. 
 
 ## Framework
-The entry point into the framework is the Sara2SecondaryStructure. This object contains all the information known about a single secondary structure found in the ensemble of a RNA sequence. This includes the structure in dot parentheses notation, total free energy, stack energy, RNA sequence and number of nucleotides. The full ensemble of a RNA sequence with all its seperate secondary structures is then represented through the Sara2StructureList to start with.
+The entry point into the framework is the Sara2SecondaryStructure. It is called this due to the fact that Serena is a toolset that runs on the brains and logic of the Sara algorithm and its predicesor Sara2 that designed one of the two featured RNA sequences in the peer-reviwe journal PNAS. This object contains all the information known about a single secondary structure found in the ensemble of a RNA sequence. This includes the structure in dot parentheses notation, total free energy, stack energy, RNA sequence and number of nucleotides. The full ensemble of a RNA sequence with all its seperate secondary structures is then represented through the Sara2StructureList to start with.
 
 I very purposfully chose my words when I said "full ensemble of a RNA sequence". This is because the shape RNA takes should not be thought of as the MFE structure only, as it currently taught in schoolm as the best approximation of the shape it will take. This is becuase the MFE is only the shape that it will exhibit at the lowest and strongest negative free energy. The RNA in actuallity will jump around and you really need to look at the entire ensemble over a large span of energy from the MFE toward the positive direction of energy. 
 
@@ -31,6 +31,28 @@ After installation you can access Serena's EV and LMV tools from python via:
 or
 
     from serena.local_minima_variation import RunLocalMinimaVariation
+
+# How to use
+
+To start lets make an assumption that you have aquired one or more RNA sequences, and this/these
+sequences have also allowed you to derive some secondary structure in dot paren notation. You are also assumed to have aquired some total free energy to associate each secondary structures with. You may or may not have stack energies and that is not important right now for how the code is written. This info you have about the RNA sequence is loaded into Serena via the Sara2SecondaryStructure. 
+
+To package the 
+
+    rna_sequence='ACGUACAUGAC'
+    secondary_structure='((.......))'
+    total_free_energy=-30
+    stack_free_energy=-33
+
+    secondary_struct = Sara2SecondaryStructure(sequence=rna_sequence,
+                                                structure=secondary_structure,
+                                                free_energy=total_free_energy,
+                                                stack_energy=stack_free_energy
+                                                )
+
+Now you add this structure to a Sara2StructureList. After you package up each secondary structure you
+can then add it to a Sara2StructureList and this can be feed into many different algorithms and other containers.
+
 
 # API Reference
 
