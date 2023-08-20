@@ -34,7 +34,7 @@ or
 
 # API Reference
 
-##
+![Sara2 Structures](/docs/src/serena/utilities/ensemble_structures.html)
 
 
 
