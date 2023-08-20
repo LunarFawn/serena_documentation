@@ -30,7 +30,7 @@ After installation you can access Serena's EV and LMV tools from python via:
 
 or
 
-    from serena.local_minima_variation import  LocalMinimaVariation
+    from serena.local_minima_variation import RunLocalMinimaVariation
 
 # API Reference
 ### Utilities
