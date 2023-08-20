@@ -44,11 +44,11 @@ To package the
     total_free_energy=-30
     stack_free_energy=-33
 
-    secondary_struct = Sara2SecondaryStructure(sequence=rna_sequence,
-                                                structure=secondary_structure,
-                                                free_energy=total_free_energy,
-                                                stack_energy=stack_free_energy
-                                                )
+    Sara2SecondaryStructure(sequence=rna_sequence,
+                            structure=secondary_structure,
+                            free_energy=total_free_energy,
+                            stack_energy=stack_free_energy
+                            )
 
 Now you add this structure to a Sara2StructureList. After you package up each secondary structure you
 can then add it to a Sara2StructureList and this can be feed into many different algorithms and other containers.
