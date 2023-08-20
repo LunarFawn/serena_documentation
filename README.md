@@ -33,14 +33,21 @@ or
     from serena.local_minima_variation import RunLocalMinimaVariation
 
 # API Reference
-### Utilities
+
+## Utilities
 [Ensemble Structures Utilities](/docs/src/serena/utilities/ensemble_structures.html)
+
 [Ensemble Groups Utilities](/docs/src/serena/utilities/ensemble_groups.html)
+
 [Ensemble Variation Utilites](/docs/src/serena/utilities/ensemble_variation.html)
+
 [Local Minima Variation Utilites](/docs/src/serena/utilities/local_minima_variation.html)
 
-### Main Entry Apps
+
+## Main Entry Apps
+
 [Ensemble Variation Main Entry](/docs/src/serena/ensemble_variation.html)
+
 [Local Minima Variation Main Entry](/docs/src/serena/local_minima_variation.html)
 
 
