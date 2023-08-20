@@ -37,22 +37,31 @@ or
 To start lets make an assumption that you have aquired one or more RNA sequences, and this/these
 sequences have also allowed you to derive some secondary structure in dot paren notation. You are also assumed to have aquired some total free energy to associate each secondary structures with. You may or may not have stack energies and that is not important right now for how the code is written. This info you have about the RNA sequence is loaded into Serena via the Sara2SecondaryStructure. 
 
-To package the 
-
+    from serena.utilities.ensemble_structures import Sara2SecondaryStructure
     rna_sequence='ACGUACAUGAC'
     secondary_structure='((.......))'
     total_free_energy=-30
     stack_free_energy=-33
 
-    Sara2SecondaryStructure(sequence=rna_sequence,
+    struc = Sara2SecondaryStructure(sequence=rna_sequence,
                             structure=secondary_structure,
                             free_energy=total_free_energy,
                             stack_energy=stack_free_energy
                             )
 
 Now you add this structure to a Sara2StructureList. After you package up each secondary structure you
-can then add it to a Sara2StructureList and this can be feed into many different algorithms and other containers.
+can then add it to a Sara2StructureList and this can be feed into many different algorithms and other containers. You do this with the "add_structure" function once you initialize the Sara2StructureList.
 
+    from serena.utilities.ensemble_structures import Sara2StructureList
+    structure_list = Sara2StructureList()
+    structure_list.add_structure(structure=struc)
+
+You can then feed this into the EnsembleVariation class that hold the algorithms for Ensemble Variation (EV). For this though you need a reference Sara2SecondaryStructure that has been packaged up. For this example the MFE structure for the ensemble was chosen.
+
+    from serena.utilities.ensemble_variation import EnsembleVariation, EV
+    e_v = EnsembleVariation()
+    ensemble_ev:EV = e_v.ensemble_variation_algorithm(kcal_group_structures_list=structure_list,
+                                    ref_structure=mfe_structure)
 
 # API Reference
 
