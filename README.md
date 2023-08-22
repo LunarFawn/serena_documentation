@@ -10,7 +10,7 @@ The package is pip installable so currently from the root of the project pass:
 
 # Algorithms, Tools, and Framework
 
-Currently Ensemble Variation and Local Minima Variation are the only algorithms with tools fully coded up and unit tested from the list of algorithms presented at the annual RNA design conference Eternacon9 at Stanford University. These utilize a new software framework I developed that enabled the processing and shuttling around of information on RNA stuctural ensembles. These ensembles are determined through thermodynamic modeling using University research software tools such as Nupack4 and Vienna2. 
+as of release 2.0.0 all tools are fully coded up and unit tested from the list of algorithms presented at the annual RNA design conference Eternacon9 at Stanford University. This includes all algorithms around determining the switchyness of a rna sequence. These utilize a new software framework I developed that enabled the processing and shuttling around of information on RNA stuctural ensembles. These ensembles are determined through thermodynamic modeling using University research software tools such as Nupack4 and Vienna2. 
 
 ## Framework
 The entry point into the framework is the Sara2SecondaryStructure. It is called this due to the fact that Serena is a toolset that runs on the brains and logic of the Sara algorithm and its predicesor Sara2 that designed one of the two featured RNA sequences in the peer-reviwe journal PNAS. This object contains all the information known about a single secondary structure found in the ensemble of a RNA sequence. This includes the structure in dot parentheses notation, total free energy, stack energy, RNA sequence and number of nucleotides. The full ensemble of a RNA sequence with all its seperate secondary structures is then represented through the Sara2StructureList to start with.
@@ -66,19 +66,25 @@ You can then feed this into the EnsembleVariation class that hold the algorithms
 # API Reference
 
 ## Utilities
-[Ensemble Structures Utilities](/docs/src/serena/utilities/ensemble_structures.html)
+[Ensemble Structures](/docs/src/serena/utilities/ensemble_structures.html)
+[Ensemble Groups](/docs/src/serena/utilities/ensemble_groups.html)
+[Ensemble Variation](/docs/src/serena/utilities/ensemble_variation.html)
+[Local Minima Variation](/docs/src/serena/utilities/local_minima_variation.html)
+[Comparison Structure](/docs/src/serena/utilities/comparison_structures.html)
+[Weighted Structures](docs/src/serena/utilities/weighted_structures.html)
 
-[Ensemble Groups Utilities](/docs/src/serena/utilities/ensemble_groups.html)
+## Interfaces
+[Nupack Version 4.0.0.28 Python](/docs/src/serena/interfaces/nupack4_0_28_wsl2_interface.html)
 
-[Ensemble Variation Utilites](/docs/src/serena/utilities/ensemble_variation.html)
-
-[Local Minima Variation Utilites](/docs/src/serena/utilities/local_minima_variation.html)
+## Analysis
+[Ensemble Analysis](/docs/src/serena/analysis/ensemble_analysis.html)
+[Investigator](/docs/src/serena/analysis/investigator.html)
+[Judge Pool](/docs/src/serena/analysis/judge_pool.html)
+[Scoring](/docs/src/serena/analysis/scoring.html)
 
 
 ## Main Entry Apps
-
 [Ensemble Variation Main Entry](/docs/src/serena/ensemble_variation.html)
-
 [Local Minima Variation Main Entry](/docs/src/serena/local_minima_variation.html)
 
 
