@@ -4,7 +4,13 @@ This is the webiste for information on the Serena Suite of RNA analysis tools an
 This software was developed to run on Ubuntu 22.04 LTS and Python 3.9. Python 3.9 is used due to the fact that the NUPACK version I currenlty use 4.0.0.28 will not build with any python versions after 3.9. 
 
 # Installation 
-The package is pip installable so currently from the root of the project pass:
+The package is pip installable via Pypi.org as well via the Github repo:
+
+To install from Pypi:
+
+    pip install serena-rna-tool
+
+To install from cloned repo:
 
     pip install .
 
@@ -95,6 +101,8 @@ You can then feed this into the EnsembleVariation class that hold the algorithms
 [Ensemble Variation Main Entry](/docs/src/serena/ensemble_variation.html)
 
 [Local Minima Variation Main Entry](/docs/src/serena/local_minima_variation.html)
+
+[Switchyness Score Main Entry](/docs/src/serena/switchyness_score.html)
 
 
 
