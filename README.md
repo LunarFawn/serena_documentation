@@ -71,7 +71,7 @@ You can then feed this into the EnsembleVariation class that hold the algorithms
 
 # API Reference
 
-## Utilities
+### Utilities
 [Ensemble Structures](/docs/src/serena/utilities/ensemble_structures.html)
 
 [Ensemble Groups](/docs/src/serena/utilities/ensemble_groups.html)
@@ -84,10 +84,10 @@ You can then feed this into the EnsembleVariation class that hold the algorithms
 
 [Weighted Structures](docs/src/serena/utilities/weighted_structures.html)
 
-## Interfaces
+### Interfaces
 [Nupack Version 4.0.0.28 Python](/docs/src/serena/interfaces/nupack4_0_28_wsl2_interface.html)
 
-## Analysis
+### Analysis
 [Ensemble Analysis](/docs/src/serena/analysis/ensemble_analysis.html)
 
 [Investigator](/docs/src/serena/analysis/investigator.html)
@@ -97,12 +97,15 @@ You can then feed this into the EnsembleVariation class that hold the algorithms
 [Scoring](/docs/src/serena/analysis/scoring.html)
 
 
-## Main Entry Apps
+### Main Entry Apps
 [Ensemble Variation Main Entry](/docs/src/serena/ensemble_variation.html)
 
 [Local Minima Variation Main Entry](/docs/src/serena/local_minima_variation.html)
 
 [Switchyness Score Main Entry](/docs/src/serena/switchyness_score.html)
+
+# Other Links
+[Slideshow on funcionality of algorithms and application](https://docs.google.com/presentation/d/1yz1LlmSyw2TNxsbE3CNwl7JvTcACax3bex9n1w3w9Kw)
 
 
 
