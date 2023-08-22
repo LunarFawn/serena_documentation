@@ -67,10 +67,15 @@ You can then feed this into the EnsembleVariation class that hold the algorithms
 
 ## Utilities
 [Ensemble Structures](/docs/src/serena/utilities/ensemble_structures.html)
+
 [Ensemble Groups](/docs/src/serena/utilities/ensemble_groups.html)
+
 [Ensemble Variation](/docs/src/serena/utilities/ensemble_variation.html)
+
 [Local Minima Variation](/docs/src/serena/utilities/local_minima_variation.html)
+
 [Comparison Structure](/docs/src/serena/utilities/comparison_structures.html)
+
 [Weighted Structures](docs/src/serena/utilities/weighted_structures.html)
 
 ## Interfaces
@@ -78,13 +83,17 @@ You can then feed this into the EnsembleVariation class that hold the algorithms
 
 ## Analysis
 [Ensemble Analysis](/docs/src/serena/analysis/ensemble_analysis.html)
+
 [Investigator](/docs/src/serena/analysis/investigator.html)
+
 [Judge Pool](/docs/src/serena/analysis/judge_pool.html)
+
 [Scoring](/docs/src/serena/analysis/scoring.html)
 
 
 ## Main Entry Apps
 [Ensemble Variation Main Entry](/docs/src/serena/ensemble_variation.html)
+
 [Local Minima Variation Main Entry](/docs/src/serena/local_minima_variation.html)
 
 
