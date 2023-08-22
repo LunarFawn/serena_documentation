@@ -74,8 +74,6 @@ You can then feed this into the EnsembleVariation class that hold the algorithms
 
 [Local Minima Variation Utilites](/docs/src/serena/utilities/local_minima_variation.html)
 
-[]()
-
 
 ## Main Entry Apps
 
