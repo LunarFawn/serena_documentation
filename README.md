@@ -119,6 +119,7 @@ You can then feed this into the EnsembleVariation class that hold the algorithms
 
 # Other Links
 [Slideshow on funcionality of algorithms and application](https://docs.google.com/presentation/d/1yz1LlmSyw2TNxsbE3CNwl7JvTcACax3bex9n1w3w9Kw)
+[A Primer on RNA Folding with Respect to the Ensemble and an Introduction to the Theory of the Mechanics of RNA](https://docs.google.com/document/d/1YZ5-ZYMsTfzz5TRpJCeCceAL8Y1YpnTSvZ9i0tvcTDI/edit?usp=sharing)
 
 
 
