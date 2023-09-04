@@ -82,10 +82,18 @@ You can then feed this into the EnsembleVariation class that hold the algorithms
 
 [Comparison Structure](/docs/src/serena/utilities/comparison_structures.html)
 
-[Weighted Structures](docs/src/serena/utilities/weighted_structures.html)
+[Weighted Structures](/docs/src/serena/utilities/weighted_structures.html)
+
+[Thread Manager -- Work in Progress](/docs/src/serena/utilities/thread_manager.html)
+
+[Logging -- Work in Progress](/docs/src/serena/utilities/logging_serena.html)
 
 ### Interfaces
 [Nupack Version 4.0.0.28 Python](/docs/src/serena/interfaces/nupack4_0_28_wsl2_interface.html)
+
+[Elnando888 Vienna2 FMN](/docs/src/serena/interfaces/vienna2_fmn_hack_interface.html)
+[Elnando888 Vienna2 FMN Github](https://github.com/ElNando888/vrna-hack)
+[My fork of Elnando888 Vienna2 FMN Github](https://github.com/LunarFawn/vrna-hack)
 
 ### Analysis
 [Ensemble Analysis](/docs/src/serena/analysis/ensemble_analysis.html)
